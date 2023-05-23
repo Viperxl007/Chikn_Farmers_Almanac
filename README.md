@@ -8,7 +8,7 @@ Steps to run:
 - Run the Chikn_Farm_Extractor script which is hard coded to call the wallet summary API every 180 seconds.  Pass the wallet address you wish to monitor as a param:
 
 Example:
-chikn_farm_extractor.py 0x123456789
+chikn_farm_exporter.py 0x123456789
 
 - Either use the Prometheus .yml config file or copy the extractor job into your existing Prometheus .yml
 
