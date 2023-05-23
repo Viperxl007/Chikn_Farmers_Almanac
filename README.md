@@ -12,6 +12,6 @@ chikn_farm_extractor.py 0x123456789
 
 - Either use the Prometheus .yml config file or copy the extractor job into your existing Prometheus .yml
 
-- Setup the prometheus data source in Grafana and Load the dashboard file or start creating your own dashboard pulling from the Prometheus time series database.
+- Setup the prometheus data source in Grafana and import the dashboard JSON file or start creating your own dashboard pulling from the Prometheus time series database.
 
 BOK BOK
