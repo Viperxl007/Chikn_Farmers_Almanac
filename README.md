@@ -21,4 +21,14 @@ chikn_farm_exporter.py 0x123456789
 
 - Setup the prometheus data source in Grafana and import the dashboard JSON file or start creating your own dashboard pulling from the Prometheus time series database.
 
-BOK BOK
+# A Note on the Grafana Dashboard template JSON file
+
+The Grafana dashboard template can be imported directly in Grafana if you don't want to build your own dashboard.  However a couple important notes:
+
+You must setup the Prometheus data source AND the InfinityAPI data source.
+
+The InfinityAPI data source is just a "Ping the API and immediately display the result" data source, no history log on it, so the static integer dashboard visualizations use the InfitityAPI data source.  By default all those visualizations are calling the 0x00000000 wallet.
+
+Simply click on the hamburger menu for each of the static value dashboard visualizations and you'll see the API call being used and where you need to hardcode your own wallet address and replace the 0x000000 wallet.
+
+# BOK BOK
